@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+{% load staticfiles %}
+        <link rel="stylesheet" type="text/css" href=" {% static 'css/az.css' %} " >
+        <script src="{% static 'jquery-1.11.3.js' %}"></script>
+
+
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+</head>
+
+
+
+
+
+<body>
+
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+<div id="container">
+
+ <nav class="navbar-1">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+        <form class="navbar-form navbar-left" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+
+ <a class="navbar-brand" href="#"> <span class="glyphicon glyphicon-home" aria-hidden="true"></span></a>
+      
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="http://circleofindia.in/cpost.php?top=30&lt=1">Top 30 <span class="sr-only">(current)</span></a></li>
+        <li><a href="http://circleofindia.in/cpost.php?cat=5&lt=1">Bollywood</a></li>
+        <li><a href="http://circleofindia.in/cpost.php?cat=18&lt=1">Cricket</a></li>
+        <li class="dropdown">
+          <a class="navbar-a " href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Jokes <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="http://127.0.0.1:8000/shot/">Text Jokes</a></li>
+            <li><a href="http://127.0.0.1:8000/appy/">Photo Jokes</a></li>
+        </ul>
+        </li>
+        <li><a href="http://circleofindia.in/cpost.php?cat=9&lt=1">Phones</a></li>
+        <li><a href="http://circleofindia.in/cpost.php?cat=16&lt=1">Food</a></li>
+      </ul>
+
+
+<ul class="nav navbar-nav navbar-right">
+
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">More Categories <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="http://circleofindia.in/cpost.php?cat=8&lt=1">Music</a></li>
+            <li><a href="http://circleofindia.in/cpost.php?cat=26&lt=1">Funny Pictures</a></li>
+            <li><a href="#">Shayari</a></li>
+            <li><a href="http://circleofindia.in/cpost.php?cat=23&lt=1">Greetings</a></li>
+            <li><a href="http://circleofindia.in/cpost.php?cat=35&lt=1">Humour</a></li>
+             <li><a href="http://circleofindia.in/cpost.php?cat=28&lt=1">Tourism</a></li>
+                <li><a href="http://circleofindia.in/cpost.php?cat=29&lt=1">Babies Pics</a></li>
+                <li><a href="http://circleofindia.in/cpost.php?cat=31&lt=1">Hindi News</a></li>
+                <li><a href="http://circleofindia.in/cpost.php?cat=32&lt=1">Spiritual</a></li>
+                <li><a href="http://circleofindia.in/cpost.php?cat=33&lt=1">Breaking News</a></li>
+                <li><a href="http://circleofindia.in/cpost.php?cat=34&lt=1">Without Images</a></li>
+                <li><a href="http://circleofindia.in/cpost.php?cat=22&lt=1">Quotes</a></li>
+                <li><a href="http://circleofindia.in/cpost.php?cat=21&lt=1">Bikes</a></li>
+                <li><a href="http://circleofindia.in/cpost.php?cat=20&lt=1">Car</a></li>
+                <li><a href="http://circleofindia.in/cpost.php?cat=6&lt=1">Hollywood</a></li>
+                <li><a href="http://circleofindia.in/cpost.php?cat=7&lt=1">News</a></li>
+                <li><a href="http://circleofindia.in/cpost.php?cat=10&lt=1">Technology</a></li>
+                <li><a href="http://circleofindia.in/cpost.php?cat=12&lt=1">Applications</a></li>
+                <li><a href="http://circleofindia.in/cpost.php?cat=15&lt=1">Politics</a></li>
+            <li class="divider"></li>
+            <li><a href="http://circleofindia.in/cpost.php?cat=17&lt=1">Travel</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+
+<div class="logo">
+ {% load staticfiles %}
+        <img src="{% static 'images/coi.png' %}"/>
+         <a href="http://circleofindia.in" >Circle Of India</a>
+</div>
+
+
+{% if photos %}
+<div class="category">
+{%for photo in sidephotos%}
+
+	
+	<ul>
+	
+	<a href="/appy/type/{{ photo.slug }}" target="_blank" >
+        <li><img src="/media/{{photo.pic}}"  height="120" width="300" /></li>
+	<a href="/appy/type/{{ photo.slug }}" target="_blank"><h4>{{photo.title}} </h4></a>
+	</a>
+	<br>	
+        </ul>
+	
+
+{% endfor %}
+</div>
+
+{% for photo in photos %}
+ <div class="jokes"> 
+<a href="/appy/type/{{ photo.slug }}" target="_blank"  ><h3>{{photo.title}}</h3></a>
+<a href="/appy/type/{{ photo.slug }}" target="_blank" >  <img src="/media/{{photo.pic}}" width="500"; /></a>
+
+<div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button"></div>
+ </div> 
+{% endfor %}
+
+
+<ul class="pagination">
+
+          {% if photos.has_previous %}
+              <li><a href="?page={{ photos.previous_page_number }}">Previous</a></li>
+          {% endif %}
+          {% for pg in photos.paginator.page_range %}
+              {% if photos.number == pg %}
+                  <li class="active"><a href="?page={{ pg }}">{{ pg }}</a></li>
+              {% else %}
+                  <li><a href="?page={{ pg }}">{{ pg }}</a></li>
+              {% endif %}
+          {% endfor %}
+          {% if photos.has_next %}
+              <li><a href="?page={{ posts.next_page_number }}">Next</a></li>
+          {% endif %}  
+ </ul>
+
+
+
+
+
+
+
+{% endif %}
+
+
+<nav class="navbar navbar-default navbar-fixed-bottom" role="navigation" >
+        <div class="container-center">
+        <p class="navbar-text pull-left"> @copyright techshot.in</p>
+        <a href="http://www.circleofindia.in/termsofuse.php" class="navbar-btn btn-warning btn pull-right ">Terms/Copyright</a>
+         <a href="http://www.circleofindia.in/privacy.php" class="navbar-btn btn-info btn pull-right ">Privacy</a>
+        <a href="http://www.circleofindia.in/about.php" class="navbar-btn btn-danger btn pull-right ">About Us</a> &nbsp &nbsp
+         <a href="http://www.circleofindia.in/career.php" class="navbar-btn btn-success btn pull-right">Careers</a>&nbsp &nbsp
+         <a href="http://www.circleofindia.in/contact.php" class="navbar-btn btn-primary btn pull-right">Contact Us</a>&nbsp &nbsp
+        </div>
+</nav>
+
+
+</div>
+</body>
+
+</html>

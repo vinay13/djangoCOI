@@ -1,0 +1,24 @@
+<!DOCTYPE>
+<html>
+
+<body>
+       {% block content %}        
+        <div class="category">
+        <h2>Category</h2>
+        {% if categories %}
+            <ul>
+                {% for category in categories %}
+                <!-- Following line changed to add an HTML hyperlink -->
+                <li><a href="/shot/category/{{ category.slug }}">{{ category.name }}</a></li>
+
+                {% endfor %}
+            </ul>
+       {% else %}
+            <strong>There are no categories present.</strong>
+       {% endif %}
+	</div>
+{% end content %}
+</body>
+
+</html>
+
